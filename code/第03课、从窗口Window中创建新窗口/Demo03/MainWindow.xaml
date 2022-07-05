@@ -1,0 +1,15 @@
+﻿<Window x:Class="Demo03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo03"
+        mc:Ignorable="d"
+        Title="第一个窗口" Height="450" Width="800" Icon="/icon.jpg" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="打开新窗口" Click="ButtonOpen_Click" Margin="106,163,502,218"/>
+        <Button Content="关闭新窗口" Click="ButtonClose_Click" Margin="341,72,259,318"/>
+        <Button Content="窗口隐藏" Click="ButtonHide_Click" Margin="341,158,267,223"/>
+        <Button Content="窗口打开" Click="ButtonShow_Click" Margin="341,230,267,152"/>
+    </Grid>
+</Window>
