@@ -1,0 +1,15 @@
+﻿<!--第一种方法 Window 改为 NavigationWindow-->
+<NavigationWindow x:Class="Demo04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo04"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Source="/Page1.xaml" ShowsNavigationUI="False">
+
+    <!--NavigationWindow里不能有元素
+    
+        属性》》》杂项》》》Source 选择page页,,勾选ShowsNavigationUI》》不显示前进后退图标 -->
+    
+</NavigationWindow>

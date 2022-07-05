@@ -1,0 +1,20 @@
+﻿<Page x:Class="Demo04.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Demo04"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="210,152,0,0" Text="page1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72"/>
+        <Button x:Name="buttonBack" Content="&lt;&lt;后退" HorizontalAlignment="Left" Margin="184,306,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Click="buttonBack_Click"/>
+        <Button x:Name="buttonPage2" Content="page2" HorizontalAlignment="Left" Margin="336,306,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Click="buttonPage2_Click"/>
+        <Button x:Name="buttonMove" Content="前进&gt;&gt;" HorizontalAlignment="Left" Margin="491,306,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Click="buttonMove_Click"/>
+        <TextBlock  VerticalAlignment="Top"> 跳转到 <Hyperlink NavigateUri="page3.xaml">page3</Hyperlink></TextBlock>
+        <TextBlock  Margin="0,31,0,0"  VerticalAlignment="Top">跳转到 <Hyperlink NavigateUri="https://www.tencent.com/zh-cn/">腾讯</Hyperlink> </TextBlock>
+
+    </Grid>
+</Page>
