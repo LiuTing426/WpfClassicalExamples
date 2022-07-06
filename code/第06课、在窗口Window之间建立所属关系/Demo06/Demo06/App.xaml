@@ -1,0 +1,9 @@
+﻿<Application x:Class="Demo06.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Demo06">
+    <!--删除  StartupUri="MainWindow.xaml" 写代码运行-->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
