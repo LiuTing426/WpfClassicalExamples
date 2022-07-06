@@ -24,6 +24,6 @@
 
         <!--超链接-->
         <!--打上<选择只要前面有2个箭头的都能添加-->
-        <TextBlock>这是 <Hyperlink NavigateUri="http://www.baidu.com">百度</Hyperlink> 超链接 这是 <AccessText>一个</AccessText> 文本</TextBlock>
+        <TextBlock>这是 <Hyperlink Click="Hyperlink_Click" NavigateUri="https://www.baidu.com">百度</Hyperlink> 超链接 这是 <AccessText>一个</AccessText> 文本</TextBlock>
     </StackPanel>
 </Window>
