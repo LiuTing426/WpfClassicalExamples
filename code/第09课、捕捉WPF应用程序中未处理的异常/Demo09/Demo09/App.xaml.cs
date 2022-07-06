@@ -26,7 +26,7 @@ namespace Demo09
             //不知道发生什么异常的时候，如果不解决异常可能会导致程序崩溃，
             //可以在App.xaml.cs中解决
             //记录日志，记录发生什么异常
-            //如果程序关键或者是内部逻辑错误可以在此处重启程序
+            //如果程序关闭或者是内部逻辑错误可以在此处重启程序
 
             //throw new NotImplementedException();
             MessageBox.Show("DispatcherUnhandledException, 异常已处理！");
