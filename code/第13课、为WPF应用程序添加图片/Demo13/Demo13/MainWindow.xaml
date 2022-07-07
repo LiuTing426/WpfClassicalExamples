@@ -1,0 +1,32 @@
+﻿<Window x:Class="Demo13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <!--添加图片，选择Image 》》属性》》公共》》Source-->
+        <Image HorizontalAlignment="Left" Height="75" Margin="59,49,0,0" VerticalAlignment="Top" Width="119" Source="/picture1.jpg"/>
+
+        <!--依次更改》》属性》》公共》》Stretch以及StretchDirection-->
+        <Image HorizontalAlignment="Left" Height="76" Margin="227,49,0,0" VerticalAlignment="Top" Width="118" Source="/picture1.jpg" RenderTransformOrigin="0.291,-0.271" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="75" Margin="400,48,0,0" VerticalAlignment="Top" Width="119" Source="/picture1.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="76" Margin="623,49,0,0" VerticalAlignment="Top" Width="134" Source="/picture1.jpg" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="99" Margin="59,184,0,0" VerticalAlignment="Top" Width="119" Source="/picture1.jpg" StretchDirection="UpOnly"/>
+        <Image HorizontalAlignment="Left" Height="75" Margin="258,184,0,0" VerticalAlignment="Top" Width="119" Source="/picture1.jpg" StretchDirection="DownOnly"/>
+
+        <!--代码添加图片》》选择Window属性》》闪电（事件）》》Loaded事件-->
+        <Image x:Name="imageA" HorizontalAlignment="Left" Height="75" Margin="460,184,0,0" VerticalAlignment="Top" Width="118"/>
+
+
+        <!--通过Xaml代码设置图片-->
+        <Image HorizontalAlignment="Left" Height="75" Margin="460,184,0,0" VerticalAlignment="Top" Width="118">
+            <Image.Source>
+                <!--属性》》杂项》》UriSource 设置图片 ，Rotation 设置 旋转角度 -->
+                <BitmapImage UriSource="/picture1.jpg" Rotation="Rotate180"/>
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>
