@@ -1,0 +1,36 @@
+﻿<Window x:Class="Demo14.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo14"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <UniformGrid>
+        <Path Stroke="DarkBlue" StrokeThickness="5" Margin="0,0,79,64" Stretch="Fill">
+            <!--数据-->
+            <Path.Data>
+                <!--几何路径-->
+                <PathGeometry>
+                    <!--数字/图形-->
+                    <PathGeometry.Figures>
+                        <PathFigureCollection>
+                            <PathFigure StartPoint="10,100">
+                                <!--线段-->
+                                <PathFigure.Segments>
+                                    <PathSegmentCollection>
+                                        <!--弧线-->
+                                        <ArcSegment Point="40,80"/>
+                                        <!--贝塞尔曲线-->
+                                        <BezierSegment Point1="100,300" Point2="100,-100" Point3="200,150"/>
+                                        <BezierSegment Point1="100,200" Point2="200,-10" Point3="100,150"/>
+                                    </PathSegmentCollection>
+                                </PathFigure.Segments>
+                            </PathFigure>
+                        </PathFigureCollection>
+                    </PathGeometry.Figures>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+    </UniformGrid>
+</Window>

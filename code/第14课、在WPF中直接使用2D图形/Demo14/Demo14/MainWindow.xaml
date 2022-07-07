@@ -1,0 +1,28 @@
+﻿<Window x:Class="Demo14.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo14"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <UniformGrid>
+        <!--矩形  描边Stroke，描边粗细StrokeThickness-->
+        <Rectangle Stroke="DarkBlue" StrokeThickness="5" Fill="SkyBlue" Margin="10 5" Width="200" Height="100"/>
+
+        <!--圆-->
+        <Ellipse Stroke="DarkBlue" StrokeThickness="5" Fill="SkyBlue" Margin="10 5" Width="100" Height="100"/>
+
+        <!--线段-->
+        <Line Stroke="DarkBlue" StrokeThickness="5" Margin="10 5" X1="10" Y1="80" X2="190" Y2="20"/>
+
+        <!--折线-->
+        <Polyline Stroke="DarkBlue" StrokeThickness="5" Margin="10,5,10,-60" Points="10,60 60,180 100,20 180,80 120,140"/>
+
+        <!--多边形-->
+        <Polygon Stroke="DarkBlue" StrokeThickness="5" Fill="DarkBlue" Margin="10,5,10,-59" Points="10,60 60,180 100,20 180,80 120,140"/>
+
+        <!--路径-->
+        <Path Stroke="DarkBlue" StrokeThickness="5" Margin="10,5,10,-56" Data="M10,60 60,180 C100,20 180,80 120,140" />
+    </UniformGrid>
+</Window>
