@@ -1,0 +1,33 @@
+﻿<Window x:Class="Demo11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label x:Name="label" Content="这是一个label控件" Background="#FF88E1E7" Foreground="#FFD6155B"/>
+
+        <!--Label里可以加其他控件-->
+        <Label>
+            <StackPanel>
+                <TextBlock Text="测试"/>
+                <Rectangle Width="100" Height="100" Fill="#FF2A9D1D"/>
+            </StackPanel>
+        </Label>
+
+        <!--Label与TextBlock最大区别是:Label可以涉及热点、快捷键，下例 -->
+
+        <!--让Label和TextBox产生关系-->
+        <!--选择Label》》属性》》杂项》》Target》》创建数据绑定》》绑定类型》》ElementName》》选择要绑定的元素名》》确定-->
+
+        <!--绑定完，最后在Label的Content="UserName"的前面加下划线_,运行不显示下划线，按Alt首字母有下划线，按Alt+U，光标移动到指定位置-->
+        <!--TextBlock是轻量级，系统负载更小，功能小于Label，如果涉及热点、快捷键使用Label，不然一般使用TextBlock-->
+        <Label Content="_UserName" Target="{Binding ElementName=MyUserName, Mode=OneWay}"/>
+        <TextBox x:Name="MyUserName" />
+
+        <Label Content="_PassWord" Target="{Binding ElementName=MyPassWord, Mode=OneWay}"/>
+        <TextBox x:Name="MyPassWord" />
+    </StackPanel>
+</Window>
