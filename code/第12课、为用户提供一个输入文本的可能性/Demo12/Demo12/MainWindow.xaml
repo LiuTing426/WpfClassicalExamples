@@ -1,0 +1,24 @@
+﻿<Window x:Class="Demo12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox />
+        <TextBox Text="这是默认的信息2" Background="#FF0CA985" BorderBrush="#FFEE7417" Foreground="#FFCB361D" FontSize="14" FontFamily="MS Reference Sans Serif" />
+    
+        <!--只读  >> 属性》》文本》》勾选IsReadOnly-->
+        <TextBox Text="这是默认的信息3" IsReadOnly="True"/>
+
+        <!--禁用（置灰色） >> 属性》》公共》》不勾选IsEnabled-->
+        <TextBox Text="这是默认的信息4" IsEnabled="False"/>
+
+        <!--多行  >> 属性》》文本》》勾选AcceptsReturn 代表允许回车-->
+        <!--滚动条 >> 属性》》布局》》VerticalScrollBarVisibility垂直滚动条(auto文本超过高度才出现滚动条)
+                                    HorizontalScrollBarVisibility水平滚动条-->
+        <TextBox Text="这是默认的信息5" AcceptsReturn="True" HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Auto" Height="80"/>
+    </StackPanel>
+</Window>
