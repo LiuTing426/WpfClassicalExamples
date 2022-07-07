@@ -1,0 +1,46 @@
+﻿<Window x:Class="Demo16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <!--属性》》公共》》Items，Windows标准是添加MenuItem-->
+        <!--属性》》布局》》Dock-->
+        <Menu DockPanel.Dock="Top">
+            <!--属性》》公共》》Items 添加MenuItem 实现多级菜单-->
+            <!--Alt+快捷键》》字母前加下划线_  -->
+            <MenuItem Header="文件（_F）">
+                <MenuItem Header="打开">
+                    <MenuItem/>
+                    <MenuItem/>
+                    <MenuItem/>
+                </MenuItem>
+                <!--给创建添加图片-->
+                <MenuItem Header="创建" IsCheckable="True">
+                    <MenuItem.Icon>
+                        <!--属性》》公共》》Source，图标和打勾互斥-->
+                        <Image Source="/咖啡.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <!--分割线-->
+                <Separator/>
+
+                <!--使用Unicode图标-->
+                <MenuItem Header="关闭" Icon="&#x2764;" Click="MenuItem_Click"/>
+                <MenuItem Header="测试" Foreground="#FFED2A2A">
+                    <MenuItem.Icon>
+                        <Run Foreground="DeepPink" >&#x2764;</Run>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <!--打勾图标》》属性》》公共》》勾选IsCheckable-->
+                <MenuItem Header="测试2" IsCheckable="True" />
+            </MenuItem>
+            <MenuItem Header="编辑（_E）"/>
+            <MenuItem Header="帮助（_H）"/>
+        </Menu>
+
+    </DockPanel>
+</Window>
