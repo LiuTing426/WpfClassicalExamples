@@ -1,0 +1,20 @@
+﻿<Window x:Class="Demo27.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo27"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--手动设置列/行，起始列数，反向排序-->
+    <UniformGrid Columns="4" FirstColumn="2" FlowDirection="RightToLeft">
+        <Label Content="单元格1" Background="Red"/>
+        <Label Content="单元格2" Background="Green"/>
+        <Label Content="单元格3" Background="Blue"/>
+        <Label Content="单元格4" Background="Yellow"/>
+        <Label Content="单元格5" Background="Black"/>
+        <Label Content="单元格6" Background="Beige"/>
+        <Label Content="单元格7" Background="DarkBlue"/>
+
+    </UniformGrid>
+</Window>
