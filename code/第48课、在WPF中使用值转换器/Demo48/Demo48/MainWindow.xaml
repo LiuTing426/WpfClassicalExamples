@@ -1,0 +1,20 @@
+﻿<Window x:Class="Demo48.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo48"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--报错可重新编译一下-->
+    <Window.Resources>
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </Window.Resources>
+    <Grid>
+        <!--属性》》外观》》Visibility》》创建数据绑定》》左边选择ElementName-->
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="261,97,0,0" VerticalAlignment="Top" Height="78" Width="239" Background="#FF2ACDA7" 
+               Visibility="{Binding IsChecked, ElementName=checkBox, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=inverse}"/>
+        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="73,108,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
