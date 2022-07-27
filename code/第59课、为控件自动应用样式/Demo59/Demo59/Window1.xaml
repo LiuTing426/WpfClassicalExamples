@@ -1,0 +1,20 @@
+﻿<Window x:Class="Demo59.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo59"
+        mc:Ignorable="d"
+        Title="Window1" Height="345.455" Width="414.773">
+    <Window.Resources>
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Gray"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="20">
+        <Button Content="BaseStyle" Style="{StaticResource buttonStyle}"/>
+        <Button Content="红"/>
+        <Button Content="绿"/>
+        <Button Content="蓝"/>
+    </StackPanel>
+</Window>
