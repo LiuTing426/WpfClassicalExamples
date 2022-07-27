@@ -1,0 +1,41 @@
+﻿<Window x:Class="Demo57.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo57"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="320.4" Width="375.2">
+
+    <Window.Resources>
+        <Style x:Key="ButtonBaseStyle" TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="8 0"/>
+            <Setter Property="MinWidth" Value="180"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style x:Key="LabelBaseStyle" TargetType="Label">
+            <Setter Property="Background" Value="Blue"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="8 0"/>
+            <Setter Property="MinWidth" Value="180"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>   
+        
+    </Window.Resources>
+
+    <StackPanel>
+        <Button Content="点击这里" Style="{StaticResource ButtonBaseStyle}"/>
+        <Button Content="点击这里" Style="{StaticResource ButtonBaseStyle}"/>
+        <Label Background="Red" Content="这里是标签" Style="{StaticResource LabelBaseStyle}"/>
+    </StackPanel>
+</Window>
