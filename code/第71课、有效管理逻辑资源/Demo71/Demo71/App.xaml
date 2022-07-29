@@ -1,0 +1,19 @@
+﻿<Application x:Class="Demo71.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Demo71"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--此处也可以自定义-->
+            <SolidColorBrush x:Key="Red" Color="Red"/>
+            <SolidColorBrush x:Key="yellow" Color="Yellow"/>
+            <!--合并的字典 属性》》（集合）》》添加ResourceDictionary-->
+            <ResourceDictionary.MergedDictionaries>
+                <!--属性》》杂项》》Source-->
+                <ResourceDictionary Source="Themes/Brushes.xaml"/>
+                <ResourceDictionary Source="Themes/SolidBrushes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
