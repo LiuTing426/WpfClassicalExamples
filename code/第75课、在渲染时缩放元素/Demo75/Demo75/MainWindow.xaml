@@ -1,0 +1,35 @@
+﻿<Window x:Class="Demo75.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo75"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <Grid>
+            <Image Source="Images/小猫.jpg" Height="200" Margin="5" Opacity="0.2" />
+            
+            <!--X轴和Y轴同时缩小到原来的80％-->
+            <Image Source="Images/小猫.jpg" Height="200" Margin="5" Opacity="1" >
+                <Image.RenderTransform>
+                    <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Grid>
+            <Image Source="Images/小猫.jpg" Height="200" Margin="5" Opacity="0.2" >
+                <Image.RenderTransform>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5" CenterX="0" CenterY="0"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <!--X轴和Y轴同时缩小到原来的50％ 并且在X轴和Y轴平移100-->
+            <Image Source="Images/小猫.jpg" Height="200" Margin="5" Opacity="1" >
+                <Image.RenderTransform>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5" CenterX="100" CenterY="100"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+    </StackPanel>
+</Window>
